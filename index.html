@@ -7,8 +7,14 @@
     <script src="http://unpkg.com/vue"></script>
   </head>
   <body>
-    <div class="vue-app">
+    <div id="vue-app">
+      <h1>{{greet('Night!')}}</h1>
       <h1>{{name}}</h1>
+      <button @click='add' type="button" name="button">add</button>
+      <button @click='sub' type="button" name="button">sub</button>
+      <br>
+      <h1>{{age}}</h1>
+      <a :href=website>Promise Home Page</a>
     </div>
     <script src="app.js" charset="utf-8"></script>
   </body>
